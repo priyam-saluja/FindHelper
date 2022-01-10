@@ -1,0 +1,28 @@
+<div class="login-section">
+    <div class="sitelabel">
+    <label id="sitelabel" style="font-size: xx-large;">Find Helper</label>
+    </div>
+    <div class="Login-form">
+    <mat-form-field appearance="fill">
+        
+        <label style="font-size: x-large;">    User name:</label><br><br>
+        <input matInput placeholder="Username">
+      </mat-form-field>
+      <br>
+      
+      <mat-form-field appearance="fill">
+        <label style="font-size: x-large;">    Password:</label><br><br>
+        <input matInput [type]="hide ? 'password' : 'text'">
+        <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+          <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+        </button>
+      </mat-form-field>
+      <div class="loginbutton">
+      <button  mat-raised-button color="primary" (click)="authenticate()">Login</button>
+      <button  mat-raised-button color="primary" routerLink="/register" routerLinkActive="activebutton">Register</button>
+      
+    </div>
+    
+      </div>
+      
+    </div>
