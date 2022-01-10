@@ -13,6 +13,7 @@ import { RouterModule } from '@angular/router';
 import { LoginComponent } from './login/login.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule , ReactiveFormsModule } from '@angular/forms';
+import { HomeComponent } from './home/home.component';
 
 
 @NgModule({
@@ -20,6 +21,7 @@ import { FormsModule , ReactiveFormsModule } from '@angular/forms';
     AppComponent,
     RegisterComponent,
     LoginComponent,
+    HomeComponent,
     
   ],
   imports: [
